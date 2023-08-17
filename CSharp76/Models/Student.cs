@@ -10,17 +10,17 @@ namespace CSharp38.Model
         
         }
         public int ID { get; set; }
-        public string StdntID { get; set; }
+        public string StudentID { get; set; }
 
-        public string StdntFirstName { get; set; }
+        public string FirstName { get; set; }
 
-        public string StdntLastName { get; set; }
+        public string LastName { get; set; }
 
-        public string StdntGitHubID { get; set; }
+        public string GitHubID { get; set; }
 
-        public int StdntAge { get; set; }
+        public int Age { get; set; }
 
-        public int StdntGrade { get; set; }
+        public int Grade { get; set; }
 
     }
 }

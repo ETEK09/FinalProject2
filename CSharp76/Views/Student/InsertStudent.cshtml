@@ -1,0 +1,16 @@
+﻿@model Student
+
+<h2>Create a New Student</h2>
+
+@using (Html.BeginForm("InsertStudentToDatabase", "Student", "Post"))
+{
+    <input asp-for="ID" type="hidden" value="" />
+
+    <label asp-for="StudentID" class="control-label">StudentID</label>
+    <input type="text" name="StudentID" class="form-control" value="" />
+
+    <label asp-for="FirstName" class="control-label">FirstName</label>
+    <input type="number" step="0.01" name="FirstName" class="form-control" />
+
+    <input type="submit" value="Create Student" class="btn btn-primary" />
+}

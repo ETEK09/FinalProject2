@@ -1,24 +1,31 @@
 ﻿@model IEnumerable<Student>
 
+
+<div style="display: block">
+    <a href="/Students/InsertStudent/">Create a New Student</a>
+</div>
+
+
     <table class="table">
         <tr>
-            <th>StdntID</th>
-            <th>StdntFirstName</th>
-            <th>StdntLastName</th>
-            <th>StdntGitHubID</th>
-            <th>StdntAge</th>
-            <th>StdntGrade</th>
+            <th>ID</th>
+            <td>StudentID</td>
+            <th>FirstName</th> @*Convert to plain english*@
+            <th>LastName</th>
+            <th>GitHubID</th>
+            <th>Age</th>
+            <th>Grade</th>
         </tr>
         @foreach(var student in @Model)
         {
         <tr>
-
-            <td>@student.StdntID</td>
-            <td>@student.StdntFirstName</td>
-            <td>@student.StdntLastName</td>
-            <td>@student.StdntGitHubID</td>
-            <td>@student.StdntAge</td>
-            <td>@student.StdntGrade</td>
+            <td>@student.ID</td>
+            <td>@student.StudentID</td>
+            <td>@student.FirstName</td>
+            <td>@student.LastName</td>
+            <td>@student.GitHubID</td>
+            <td>@student.Age</td>
+            <td>@student.Grade</td>
         </tr>
         }
 
