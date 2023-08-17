@@ -1,0 +1,40 @@
+﻿
+@model Student
+
+<h3>@Model.StdntFirstName Information</h3>
+
+<table class="table">
+    <tr>
+        
+        <th>StdntID</th>
+        <th>StdntFirstName</th>
+        <th>StdntLastName</th>
+        <th>StdntGitHubID</th>
+        <th>StdntAge</th>
+        <th>StdntGrade</th>
+    </tr>
+    <tr>
+        
+        <td>@Model.StdntID</td>
+        <td>@Model.StdntFirstName</td>
+        <td>@Model.StdntLastName</td>
+        <td>@Model.StdntGitHubID</td>
+        <td>@Model.StdntAge</td>
+        <td>@Model.StdntGrade</td>
+    </tr>
+</table>
+
+<div style="display: block">
+    <a href="/Student/UpdateStudent/@Model.ID">Update this Student</a>
+</div>
+
+
+
+<div style="display: block">
+
+    @using (Html.BeginForm("DeleteStudent", "Student", "Post"))
+    {
+        <input type="hidden" asp-for="ID" value="@Model.ID" />
+        <input type="submit" onclick="return confirm('Are you sure?')" value="Delete this student" />
+    }
+</div>
