@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ericc\\source\\repos\\CSharp76\\CSharp76\\CSharp38.csproj": {}
+    "C:\\Users\\ericc\\OneDrive\\Desktop\\Repos38\\CSharp76\\CSharp76\\CSharp38.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ericc\\source\\repos\\CSharp76\\CSharp76\\CSharp38.csproj": {
+    "C:\\Users\\ericc\\OneDrive\\Desktop\\Repos38\\CSharp76\\CSharp76\\CSharp38.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ericc\\source\\repos\\CSharp76\\CSharp76\\CSharp38.csproj",
+        "projectUniqueName": "C:\\Users\\ericc\\OneDrive\\Desktop\\Repos38\\CSharp76\\CSharp76\\CSharp38.csproj",
         "projectName": "CSharp38",
-        "projectPath": "C:\\Users\\ericc\\source\\repos\\CSharp76\\CSharp76\\CSharp38.csproj",
+        "projectPath": "C:\\Users\\ericc\\OneDrive\\Desktop\\Repos38\\CSharp76\\CSharp76\\CSharp38.csproj",
         "packagesPath": "C:\\Users\\ericc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ericc\\source\\repos\\CSharp76\\CSharp76\\obj\\",
+        "outputPath": "C:\\Users\\ericc\\OneDrive\\Desktop\\Repos38\\CSharp76\\CSharp76\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ericc\\AppData\\Roaming\\NuGet\\NuGet.Config",

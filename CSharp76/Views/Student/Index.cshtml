@@ -2,7 +2,7 @@
 
 
 <div style="display: block">
-    <a href="/Students/InsertStudent/">Create a New Student</a>
+    <a href="/Student/InsertStudent/">Create a New Student</a>
 </div>
 
 
@@ -16,10 +16,11 @@
             <th>Age</th>
             <th>Grade</th>
         </tr>
+
         @foreach(var student in @Model)
         {
         <tr>
-            <td>@student.ID</td>
+            <td><a href=/Student/ViewStudent/@student.ID>@student.ID</a></td>
             <td>@student.StudentID</td>
             <td>@student.FirstName</td>
             <td>@student.LastName</td>

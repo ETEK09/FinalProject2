@@ -9,8 +9,20 @@
     <label asp-for="StudentID" class="control-label">StudentID</label>
     <input type="text" name="StudentID" class="form-control" value="@Model.StudentID" />
 
-    <label asp-for="FirstName" class="control-label">Price</label>
-    <input type="number" step="0.01" name="FirstName" class="form-control" value="@Model.FirstName" />
+    <label asp-for="FirstName" class="control-label">FirstName</label>
+    <input type="text" step="0.01" name="FirstName" class="form-control" value="@Model.FirstName" />
+
+    <label asp-for="LastName" class="control-label">LastName</label>
+    <input type="text" name="LastName" class="form-control" value="@Model.LastName" />
+
+    <label asp-for="GitHubID" class="control-label">GitHubID</label>
+    <input type="text" step="0.01" name="GitHubID" class="form-control" value="@Model.GitHubID" />
+
+    <label asp-for="Age" class="control-label">Age</label>
+    <input type="number" step="0.01" name="Age" class="form-control" value="@Model.Age" />
+
+    <label asp-for="Grade" class="control-label">Grade</label>
+    <input type="number" step="0.01" name="Grade" class="form-control" value="@Model.Grade" />
 
     <input type="submit" value="Update Student" class="btn btn-primary" />
 }

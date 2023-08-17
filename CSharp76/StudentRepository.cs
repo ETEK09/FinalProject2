@@ -27,21 +27,28 @@ namespace CSharp38
 
         public void UpdateStudent(Student student)
         {
-            _conn.Execute("UPDATE students SET Name = @studentID, " +
-                "Student = @firstname " +
-                "WHERE ID = @id",
-                new { FirstName = student.FirstName, LastName = student.LastName, StudentID = student.StudentID });
+            _conn.Execute("UPDATE student SET FirstName = @firstName, " +
+                "LastName = @lastName, " +
+                "StudentID = @studentID, " +
+                "GitHubID = @gitHubID, " +
+                "Age = @age, " +
+                "Grade = @grade " +
+                "WHERE ID = @id;",
+                new { firstName = student.FirstName, lastName = student.LastName, age = student.Age, grade = student.Grade, gitHubID = student.GitHubID, studentID = student.StudentID, id = student.ID });
         }
 
         public void InsertStudent(Student studentToInsert)
         {
-            _conn.Execute("INSERT INTO students (StudentID, FirstName, LastName, GitHudID, Age, Grade) " +
-                "VALUES (@studentID, FirstName, LastName, GitHudID, Age, Grade);",
+            _conn.Execute("INSERT INTO student (StudentID, FirstName, LastName, GitHubID, Age, Grade) " +
+                "VALUES (@studentID, @firstName, @lastName, @gitHubID, @age, @grade);",
                 new { studentID = studentToInsert.StudentID,
-                    FirstName = studentToInsert.FirstName, 
-                    LastName = studentToInsert.LastName,
-                    
-                });
+                    firstName = studentToInsert.FirstName,
+                    lastName = studentToInsert.LastName,
+                    gitHubID = studentToInsert.GitHubID,
+                    age = studentToInsert.Age,
+                    grade = studentToInsert.Grade,
+
+                }); 
         }
        
 
